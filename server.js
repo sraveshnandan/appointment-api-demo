@@ -19,7 +19,7 @@ app.use(
   cors({
     // Cross origin conf
     credentials: true,
-    origin:"http://localhost:5173"
+    origin:"https://one-clinic.netlify.app"
   })
 );
 app.use(bodyParser.json());
