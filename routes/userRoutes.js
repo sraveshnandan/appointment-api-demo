@@ -11,7 +11,7 @@ const { isLoggedIn } = require("../middlewares/auth");
 
 const router = require("express").Router();
 
-router.route("/user/register").post(isLoggedIn, createUserFunction);
+router.route("/user/register").post( createUserFunction);
 router.route("/user/login").post(loginUserFunction);
 router.route("/user/logout").get(isLoggedIn,logoutUserFunction);
 router.route("/user/auth").get(isLoggedIn,getProfileFunction);
